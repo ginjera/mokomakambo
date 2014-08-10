@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mokomakambo!</title><link href="/" rel="alternate"></link><link href="/feeds/ginjera.atom.xml" rel="self"></link><id>/</id><updated>2014-08-10T23:24:00+02:00</updated><entry><title>Hello World</title><link href="/hello.html" rel="alternate"></link><updated>2014-08-10T23:24:00+02:00</updated><author><name>ginjera</name></author><id>tag:,2014-08-10:hello.html</id><summary type="html">&lt;p&gt;My &lt;em&gt;first&lt;/em&gt; post using &lt;a class="reference external" href="http://docs.getpelican.com/en/3.4.0/getting_started.html"&gt;Pelican&lt;/a&gt;!&lt;/p&gt;
+</summary><category term="pelican"></category><category term="web"></category></entry></feed>
