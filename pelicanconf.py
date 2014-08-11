@@ -4,9 +4,10 @@ from __future__ import unicode_literals
 
 AUTHOR = u'ginjera'
 SITENAME = u'Mokomakambo!'
-SITEURL = 'http://ginjera.github.io/mokomakambo/'
+SITEURL = 'http://ginjera.github.io/mokomakambo'
 
 PATH = 'content'
+STATIC_PATHS = ['images']
 
 TIMEZONE = 'Asia/Singapore'
 
@@ -18,14 +19,14 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+# LINKS = (('Pelican', 'http://getpelican.com/'),
+#          ('Python.org', 'http://python.org/'),
+#          ('Jinja2', 'http://jinja.pocoo.org/'),
+#          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+# SOCIAL = (('You can add links in your config file', '#'),
+#           ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = False
 
@@ -33,4 +34,8 @@ DEFAULT_PAGINATION = False
 RELATIVE_URLS = True
 
 # Decode theme from Wordpress
-THEME = "pelican-themes/pelican-decode"
+# THEME = "pelican-themes/pelican-decode"
+# THEME = "notmyidea"
+# THEME = "pelican-themes/pelican-cait"
+# THEME = "pelican-themes/pelican-blueidea"
+THEME = "pelican-themes/pelican-chunk"
