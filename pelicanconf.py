@@ -32,4 +32,5 @@ DEFAULT_PAGINATION = False
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 
+# Decode theme from Wordpress
 THEME = "pelican-themes/pelican-decode"

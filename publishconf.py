@@ -10,6 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
+# Add forward slash to url end
 SITEURL = 'http://ginjera.github.io/mokomakambo/'
 RELATIVE_URLS = False
 
