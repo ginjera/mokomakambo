@@ -1,123 +1,119 @@
-/*
-Theme Name: Decode
-*/
-
-
-/* =Global
+/* =RTL
 ----------------------------------------------- */
-
-body {
-	direction: rtl;
-	unicode-bidi: embed;
-	text-align: right;
+#contents {
+	border-left: none;
+	border-right: 1px solid #ccc;
+	margin-left: 0;
+	margin-right: 199px;
 }
 
-caption, th, td {
-	text-align: right;
-}
-
-ul, ol {
-	margin: 0 3em 1.5em 0;
-}
-
-li > ul,
-li > ol {
-	margin-left: auto;
-	margin-right: 1.5em;
-}
-
-textarea {
-	padding-left: auto;
-	padding-right: 3px;
-}
-
-/* Alignment */
-.alignleft {
-	float: right;
-	margin-right: auto;
-	margin-left: 1.5em;
-}
-.alignright {
-	float: left;
-	margin-left: auto;
-	margin-right: 1.5em;
-}
-
-.screen-reader-text:hover, .assistive-text:hover,
-.screen-reader-text:active, .assistive-text:active,
-.screen-reader-text:focus, .assistive-text:focus {
-	left: auto;
-	right: 5px;
-}
 
 /* =Menu
 ----------------------------------------------- */
-
-.navigation-main ul {
+#menu {
+	text-align: left;
+}
+#menu ul {
 	padding-right: 0;
 }
-.navigation-main ul ul {
-	float: right;
-	top: 1.5em;
-	left: auto;
-	right: 0;
+#menu li {
+	float: left;
 }
-.navigation-main ul ul ul {
-	left: auto;
-	right: 100%;
+#menu ul ul {
+	float: left;
+	position: absolute;
+		left: 0;
+		right: auto;
+}
+#menu ul ul ul {
+	left: 100%;
+	right: auto;
+}
+#menu ul ul a {
+	padding: .8em 1em .8em .5em;
 }
 
 /* =Content
 ----------------------------------------------- */
-
-.post blockquote {
-	padding: 0 5% 0 0;
-	border-left: none;
-	border-right: 1px solid #009BCD;
+.hentry .main {
+	padding: 29px 15px 15px 5px;
+	text-align: right;
 }
-
-/* =Reply Tool
------------------------------------------------ */
-
-.social-reply {
-	right: auto;
-	left: 10px;
-}
-
-/* =Navigation
------------------------------------------------ */
-
-.nav-previous {
+.hentry .entry-meta {
 	float: right;
+	margin: 26px -199px 0 0;
+	text-align: left;
+}
+.entry-title {
+	margin: 5px 0px 15px 0px;
+	text-align: right;
+}
+blockquote {
+	border-left: none;
+	border-right: 10px solid #36bcab;
+	text-align: justify;
+}
+.tag-links strong {
+	margin-left: 4px;
+	margin-right: none;
+}
+.entry-content table {
 	text-align: right;
 }
 
-.nav-next {
-	float: left;
-	text-align: left;
+
+/* =Post Formats
+-------------------------------------------------------------- */
+
+/* Link */
+.format-link .entry-title:after {
+	padding-right: 10px;
 }
+
+
 /* =Comments
 ----------------------------------------------- */
-
-.comment-metadata a {
-	margin-right: auto;
-	margin-left: 1.5%
+#comments {
+	text-align: right;
 }
-
-/* =Desktop
------------------------------------------------ */
-@media only screen and (min-width: 699px) {
-.social-reply {
+.commentlist {
+	margin-left: 0;
+	margin-right: 40px;
+	padding-right: 0;
+}
+.commentlist li {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.comment .comment-meta {
+	left: 0;
 	right: auto;
-	left: 5px;
 }
-.site-content .nav-next a:hover, .site-navigation .nav-previous a:hover {
-	padding-left: auto;
-	padding-right: 2.5%
+.comment img.avatar {
+	left: auto;
+	right: -40px;
+}
+#comments .bypostauthor > .comment-body .comment-meta {
+	left: 15px;
+	right: auto;
 }
 
-.site-content .nav-previous a:hover, .site-navigation .nav-next a:hover {
-	padding-left: auto;
-	padding-right: 2.5%;
+
+/* =Widgets
+----------------------------------------------- */
+#widgets {
+	text-align: right;
 }
+#widgets .widget {
+	float: right;
+}
+#widgets .widget:nth-child(3n+1) {
+	clear: right;
+}
+.widget ul {
+	padding-right: 20px;
+}
+/* Authors Widget */
+.widget_authors ul {
+	padding-right: 0;
 }
