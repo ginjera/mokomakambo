@@ -38,21 +38,30 @@
 
 <div class="post type-post status-publish format-standard hentry category-general" id="post">
 	<div class="entry-meta">
-		<div class="date"><a href="http://ginjera.github.io/mokomakambo/Colour-settings-for-the-ls-command.html">Mon 11 August 2014</a></div>
+		<div class="date"><a href="http://ginjera.github.io/mokomakambo/colour-settings-for-the-ls-command.html">Mon 11 August 2014</a></div>
 		<span class="byline">By <a href="http://ginjera.github.io/mokomakambo/author/ginjera.html">ginjera</a></span>
 			<span class="cat-links"><a href="http://ginjera.github.io/mokomakambo/category/blog.html" title="View all posts in blog" rel="category tag">blog</a></span>
 	</div> <!-- /#entry-meta -->
 	<div class="main">
 		<h2 class="entry-title">
-			<a href="http://ginjera.github.io/mokomakambo/Colour-settings-for-the-ls-command.html" title="Permalink to Colour settings for ls command" rel="bookmark">Colour settings for ls command</a>
+			<a href="http://ginjera.github.io/mokomakambo/colour-settings-for-the-ls-command.html" title="Permalink to Colour settings for ls command" rel="bookmark">Colour settings for ls command</a>
 		</h2>
 		<div class="entry-content">
 			<p>I use CentOS 6.5 on my personal laptop. For the longest time, I lived with the awful colour defaults for the ls command. Certain directories default to blue text on green background.</p>
-<img alt="" src="http://ginjera.github.io/mokomakambo/images/Awful-default-dir-colour.png" />
-<p>Ugh, grosser than gross!</p>
+<div class="figure align-center">
+<img alt="Awful default directory colours" src="http://ginjera.github.io/mokomakambo/images/Awful-default-dir-colour.png" />
+<p class="caption">Ugh, grosser than gross!</p>
+</div>
 <p>It occurred to me recently that there must be a text file somewhere that I could tweak to make this more readable.</p>
-<p>Lo and behold, here's the file that does the trick: /etc/DIR_COLORS. And there are nice helpful comments, which tell us that we can adjust 3 elements:</p>
-<div class="highlight"><pre><span class="c"># Below are the color init strings for the basic file types. A color init</span>
+<p>Lo and behold, here's the file that does the trick: <tt class="docutils literal">/etc/DIR_COLORS</tt>. And there are nice helpful comments, which tell us that we can adjust 3 elements:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span class="c"># Below are the color init strings for the basic file types. A color init</span>
 <span class="c"># string consists of one or more of the following numeric codes:</span>
 <span class="c"># Attribute codes:</span>
 <span class="c"># 00=none 01=bold 04=underscore 05=blink 07=reverse 08=concealed</span>
@@ -61,12 +70,14 @@
 <span class="c"># Background color codes:</span>
 <span class="c"># 40=black 41=red 42=green 43=yellow 44=blue 45=magenta 46=cyan 47=white</span>
 </pre></div>
-<p>Scanning through that file, I found the blue (34) on green (42) culprit:</p>
-<div class="highlight"><pre>OTHER_WRITABLE 34;42 <span class="c"># dir that is other-writable (o+w) and not sticky</span>
+</td></tr></table><p>Scanning through that file, I found the blue (34) on green (42) culprit:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre>OTHER_WRITABLE 34;42 <span class="c"># dir that is other-writable (o+w) and not sticky</span>
 </pre></div>
-<p>Rather than mess around with /etc/DIR_COLORS, I made a copy at ~/.dircolors and changed the settings for OTHER_WRITABLE to 01;35:</p>
-<img alt="" src="http://ginjera.github.io/mokomakambo/images/Ahh-much-better.png" />
-<p>Ahhh, much, much better...</p>
+</td></tr></table><p>Rather than mess around with <tt class="docutils literal">/etc/DIR_COLORS</tt>, I made a copy at <tt class="docutils literal"><span class="pre">~/.dircolors</span></tt> and changed the settings for OTHER_WRITABLE to 01;35:</p>
+<div class="figure align-center">
+<img alt="Bold magenta folders" src="http://ginjera.github.io/mokomakambo/images/Ahh-much-better.png" />
+<p class="caption">Ahhh, purple folders... exactly what the optometrist ordered</p>
+</div>
 <p>For a full list of available colours, this <a class="reference external" href="http://linux-sxs.org/housekeeping/lscolors.html">site</a> gives the full low down.</p>
 
 		</div> <!--/#entry-content-->

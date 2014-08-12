@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Mokomakambo!</title><link href="http://ginjera.github.io/mokomakambo/" rel="alternate"></link><link href="http://ginjera.github.io/mokomakambo/feeds/blog.atom.xml" rel="self"></link><id>http://ginjera.github.io/mokomakambo/</id><updated>2014-08-11T17:53:00+08:00</updated><entry><title>Colour settings for ls command</title><link href="http://ginjera.github.io/mokomakambo/Colour-settings-for-the-ls-command.html" rel="alternate"></link><updated>2014-08-11T17:53:00+08:00</updated><author><name>ginjera</name></author><id>tag:ginjera.github.io,2014-08-11:mokomakambo/Colour-settings-for-the-ls-command.html</id><summary type="html">&lt;p&gt;I use CentOS 6.5 on my personal laptop. For the longest time, I lived with the awful colour defaults for the ls command. Certain directories default to blue text on green background.&lt;/p&gt;
-&lt;img alt="" src="http://ginjera.github.io/mokomakambo/images/Awful-default-dir-colour.png" /&gt;
-&lt;p&gt;Ugh, grosser than gross!&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mokomakambo!</title><link href="http://ginjera.github.io/mokomakambo/" rel="alternate"></link><link href="http://ginjera.github.io/mokomakambo/feeds/blog.atom.xml" rel="self"></link><id>http://ginjera.github.io/mokomakambo/</id><updated>2014-08-11T17:53:00+08:00</updated><entry><title>Colour settings for ls command</title><link href="http://ginjera.github.io/mokomakambo/colour-settings-for-the-ls-command.html" rel="alternate"></link><updated>2014-08-11T17:53:00+08:00</updated><author><name>ginjera</name></author><id>tag:ginjera.github.io,2014-08-11:mokomakambo/colour-settings-for-the-ls-command.html</id><summary type="html">&lt;p&gt;I use CentOS 6.5 on my personal laptop. For the longest time, I lived with the awful colour defaults for the ls command. Certain directories default to blue text on green background.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="Awful default directory colours" src="http://ginjera.github.io/mokomakambo/images/Awful-default-dir-colour.png" /&gt;
+&lt;p class="caption"&gt;Ugh, grosser than gross!&lt;/p&gt;
+&lt;/div&gt;
 &lt;p&gt;It occurred to me recently that there must be a text file somewhere that I could tweak to make this more readable.&lt;/p&gt;
-&lt;p&gt;Lo and behold, here's the file that does the trick: /etc/DIR_COLORS. And there are nice helpful comments, which tell us that we can adjust 3 elements:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Below are the color init strings for the basic file types. A color init&lt;/span&gt;
+&lt;p&gt;Lo and behold, here's the file that does the trick: &lt;tt class="docutils literal"&gt;/etc/DIR_COLORS&lt;/tt&gt;. And there are nice helpful comments, which tell us that we can adjust 3 elements:&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4
+5
+6
+7
+8&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Below are the color init strings for the basic file types. A color init&lt;/span&gt;
 &lt;span class="c"&gt;# string consists of one or more of the following numeric codes:&lt;/span&gt;
 &lt;span class="c"&gt;# Attribute codes:&lt;/span&gt;
 &lt;span class="c"&gt;# 00=none 01=bold 04=underscore 05=blink 07=reverse 08=concealed&lt;/span&gt;
@@ -13,12 +22,14 @@
 &lt;span class="c"&gt;# Background color codes:&lt;/span&gt;
 &lt;span class="c"&gt;# 40=black 41=red 42=green 43=yellow 44=blue 45=magenta 46=cyan 47=white&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Scanning through that file, I found the blue (34) on green (42) culprit:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;OTHER_WRITABLE 34;42 &lt;span class="c"&gt;# dir that is other-writable (o+w) and not sticky&lt;/span&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;Scanning through that file, I found the blue (34) on green (42) culprit:&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;OTHER_WRITABLE 34;42 &lt;span class="c"&gt;# dir that is other-writable (o+w) and not sticky&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Rather than mess around with /etc/DIR_COLORS, I made a copy at ~/.dircolors and changed the settings for OTHER_WRITABLE to 01;35:&lt;/p&gt;
-&lt;img alt="" src="http://ginjera.github.io/mokomakambo/images/Ahh-much-better.png" /&gt;
-&lt;p&gt;Ahhh, much, much better...&lt;/p&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;Rather than mess around with &lt;tt class="docutils literal"&gt;/etc/DIR_COLORS&lt;/tt&gt;, I made a copy at &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;~/.dircolors&lt;/span&gt;&lt;/tt&gt; and changed the settings for OTHER_WRITABLE to 01;35:&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="Bold magenta folders" src="http://ginjera.github.io/mokomakambo/images/Ahh-much-better.png" /&gt;
+&lt;p class="caption"&gt;Ahhh, purple folders... exactly what the optometrist ordered&lt;/p&gt;
+&lt;/div&gt;
 &lt;p&gt;For a full list of available colours, this &lt;a class="reference external" href="http://linux-sxs.org/housekeeping/lscolors.html"&gt;site&lt;/a&gt; gives the full low down.&lt;/p&gt;
 </summary><category term="ls"></category><category term="bash"></category></entry><entry><title>Hello World</title><link href="http://ginjera.github.io/mokomakambo/hello.html" rel="alternate"></link><updated>2014-08-10T23:24:00+08:00</updated><author><name>ginjera</name></author><id>tag:ginjera.github.io,2014-08-10:mokomakambo/hello.html</id><summary type="html">&lt;p&gt;My &lt;em&gt;first&lt;/em&gt; post using &lt;a class="reference external" href="http://docs.getpelican.com/en/3.4.0/getting_started.html"&gt;Pelican&lt;/a&gt;!&lt;/p&gt;
 </summary><category term="pelican"></category></entry></feed>
