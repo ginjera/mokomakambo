@@ -12,7 +12,7 @@ I use CentOS 6.5 on my personal laptop. For the longest time, I lived with the a
     :alt: Awful default directory colours
     :align: center
 
-    Ugh, grosser than gross!
+    Arghh, my eyes! Please sir, it hurts!
 
 It occurred to me recently that there must be a text file somewhere that I could tweak to make this more readable. 
 
