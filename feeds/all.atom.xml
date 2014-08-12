@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Mokomakambo!</title><link href="http://ginjera.github.io/mokomakambo/" rel="alternate"></link><link href="http://ginjera.github.io/mokomakambo/feeds/all.atom.xml" rel="self"></link><id>http://ginjera.github.io/mokomakambo/</id><updated>2014-08-11T17:53:00+08:00</updated><entry><title>Colour settings for ls command</title><link href="http://ginjera.github.io/mokomakambo/colour-settings-for-the-ls-command.html" rel="alternate"></link><updated>2014-08-11T17:53:00+08:00</updated><author><name>ginjera</name></author><id>tag:ginjera.github.io,2014-08-11:mokomakambo/colour-settings-for-the-ls-command.html</id><summary type="html">&lt;p&gt;I use CentOS 6.5 on my personal laptop. For the longest time, I lived with the awful colour defaults for the ls command. Certain directories default to blue text on green background.&lt;/p&gt;
 &lt;div class="figure align-center"&gt;
 &lt;img alt="Awful default directory colours" src="http://ginjera.github.io/mokomakambo/images/Awful-default-dir-colour.png" /&gt;
-&lt;p class="caption"&gt;Ugh, grosser than gross!&lt;/p&gt;
+&lt;p class="caption"&gt;Arghh, my eyes! Please sir, it hurts!&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;It occurred to me recently that there must be a text file somewhere that I could tweak to make this more readable.&lt;/p&gt;
 &lt;p&gt;Lo and behold, here's the file that does the trick: &lt;tt class="docutils literal"&gt;/etc/DIR_COLORS&lt;/tt&gt;. And there are nice helpful comments, which tell us that we can adjust 3 elements:&lt;/p&gt;
@@ -31,5 +31,14 @@
 &lt;p class="caption"&gt;Ahhh, purple folders... exactly what the optometrist ordered&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;For a full list of available colours, this &lt;a class="reference external" href="http://linux-sxs.org/housekeeping/lscolors.html"&gt;site&lt;/a&gt; gives the full low down.&lt;/p&gt;
-</summary><category term="ls"></category><category term="bash"></category></entry><entry><title>Hello World</title><link href="http://ginjera.github.io/mokomakambo/hello.html" rel="alternate"></link><updated>2014-08-10T23:24:00+08:00</updated><author><name>ginjera</name></author><id>tag:ginjera.github.io,2014-08-10:mokomakambo/hello.html</id><summary type="html">&lt;p&gt;My &lt;em&gt;first&lt;/em&gt; post using &lt;a class="reference external" href="http://docs.getpelican.com/en/3.4.0/getting_started.html"&gt;Pelican&lt;/a&gt;!&lt;/p&gt;
+</summary><category term="ls"></category><category term="bash"></category></entry><entry><title>Inserting images in restructured text</title><link href="http://ginjera.github.io/mokomakambo/inserting-images-in-restructuredtext.html" rel="alternate"></link><updated>2014-08-11T13:03:00+08:00</updated><author><name>ginjera</name></author><id>tag:ginjera.github.io,2014-08-11:mokomakambo/inserting-images-in-restructuredtext.html</id><summary type="html">&lt;p&gt;I was struggling to figure out how to insert an image into a post. The example from the pelican docs simply rendered as text.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;![Alt Text]({filename}/images/han.jpg)
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;Until I realised that the example was for Markdown. I was writing in restructuredtext. The equivalent in restructuredtext is:&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;.. image:: {filename}/images/han.jpg
+   :alt: Alt Text
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;So there it is.&lt;/p&gt;
+</summary><category term="pelican"></category><category term="ReST"></category></entry><entry><title>Hello World</title><link href="http://ginjera.github.io/mokomakambo/hello.html" rel="alternate"></link><updated>2014-08-10T23:24:00+08:00</updated><author><name>ginjera</name></author><id>tag:ginjera.github.io,2014-08-10:mokomakambo/hello.html</id><summary type="html">&lt;p&gt;My &lt;em&gt;first&lt;/em&gt; post using &lt;a class="reference external" href="http://docs.getpelican.com/en/3.4.0/getting_started.html"&gt;Pelican&lt;/a&gt;!&lt;/p&gt;
 </summary><category term="pelican"></category></entry></feed>

@@ -50,7 +50,7 @@
 			<p>I use CentOS 6.5 on my personal laptop. For the longest time, I lived with the awful colour defaults for the ls command. Certain directories default to blue text on green background.</p>
 <div class="figure align-center">
 <img alt="Awful default directory colours" src="http://ginjera.github.io/mokomakambo/images/Awful-default-dir-colour.png" />
-<p class="caption">Ugh, grosser than gross!</p>
+<p class="caption">Arghh, my eyes! Please sir, it hurts!</p>
 </div>
 <p>It occurred to me recently that there must be a text file somewhere that I could tweak to make this more readable.</p>
 <p>Lo and behold, here's the file that does the trick: <tt class="docutils literal">/etc/DIR_COLORS</tt>. And there are nice helpful comments, which tell us that we can adjust 3 elements:</p>
@@ -83,6 +83,31 @@
 		</div> <!--/#entry-content-->
     		<span class="tag-links"><strong>Tagged</strong>
  <a href="http://ginjera.github.io/mokomakambo/tag/bash.html" rel="tag">bash</a>,  <a href="http://ginjera.github.io/mokomakambo/tag/ls.html" rel="tag">ls</a>    		</span>
+	</div> <!--/#main-->
+</div>  <!--/#post--><div class="post type-post status-publish format-standard hentry category-general" id="post">
+	<div class="entry-meta">
+		<div class="date"><a href="http://ginjera.github.io/mokomakambo/inserting-images-in-restructuredtext.html">Mon 11 August 2014</a></div>
+		<span class="byline">By <a href="http://ginjera.github.io/mokomakambo/author/ginjera.html">ginjera</a></span>
+			<span class="cat-links"><a href="http://ginjera.github.io/mokomakambo/category/blog.html" title="View all posts in blog" rel="category tag">blog</a></span>
+	</div> <!-- /#entry-meta -->
+	<div class="main">
+		<h2 class="entry-title">
+			<a href="http://ginjera.github.io/mokomakambo/inserting-images-in-restructuredtext.html" title="Permalink to Inserting images in restructured text" rel="bookmark">Inserting images in restructured text</a>
+		</h2>
+		<div class="entry-content">
+			<p>I was struggling to figure out how to insert an image into a post. The example from the pelican docs simply rendered as text.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre>![Alt Text]({filename}/images/han.jpg)
+</pre></div>
+</td></tr></table><p>Until I realised that the example was for Markdown. I was writing in restructuredtext. The equivalent in restructuredtext is:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre>.. image:: {filename}/images/han.jpg
+   :alt: Alt Text
+</pre></div>
+</td></tr></table><p>So there it is.</p>
+
+		</div> <!--/#entry-content-->
+    		<span class="tag-links"><strong>Tagged</strong>
+ <a href="http://ginjera.github.io/mokomakambo/tag/pelican.html" rel="tag">pelican</a>,  <a href="http://ginjera.github.io/mokomakambo/tag/rest.html" rel="tag">ReST</a>    		</span>
 	</div> <!--/#main-->
 </div>  <!--/#post--><div class="post type-post status-publish format-standard hentry category-general" id="post">
 	<div class="entry-meta">
