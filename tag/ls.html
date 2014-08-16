@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Mokomakambo! &mdash; Articles tagged ls</title>
+		<meta charset="utf-8" />
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
+		<link rel="stylesheet" type="text/css" href="http://ginjera.github.io/mokomakambo/theme/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="http://ginjera.github.io/mokomakambo/theme/css/pygment.css" />
+		<link rel='stylesheet' id='oswald-css'  href='http://fonts.googleapis.com/css?family=Oswald&#038;ver=3.3.2' type='text/css' media='all' />
+		<style type="text/css">
+			body.custom-background { background-color: #f5f5f5; }
+		</style>
+		<link rel="alternate" type="application/atom+xml"
+			title="Mokomakambo! — Flux Atom"
+			href="http://ginjera.github.io/mokomakambo/" /> 
+		<!--[if lte IE 8]><script src="http://ginjera.github.io/mokomakambo/theme/js/html5shiv.js"></script><![endif]-->
+</head>
+
+<body class="home blog custom-background " >
+	<div id="container">
+		<div id="header">
+				<h1 id="site-title"><a href="http://ginjera.github.io/mokomakambo">Mokomakambo!</a></h1>
+		</div><!-- /#banner -->
+		
+		<div id="menu">
+			<div class="menu-navigation-container">
+				<ul id="menu-navigation" class="menu">
+						<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://ginjera.github.io/mokomakambo/pages/About.html">About</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://ginjera.github.io/mokomakambo/category/blog.html">blog</a></li>
+
+				</ul>
+			</div> <!--/#menu-navigation-container-->
+		</div><!-- /#menu -->
+		
+		<div class="page-title">
+<div class="page-title">
+	<h2>Tagged with <span>ls</span> &hellip;</h2>
+</div>
+		</div>
+	
+		<div id="contents">
+<div class="post type-post status-publish format-standard hentry category-general" id="post">
+	<div class="entry-meta">
+		<div class="date"><a href="http://ginjera.github.io/mokomakambo/colour-settings-for-the-ls-command.html">Mon 11 August 2014</a></div>
+		<span class="byline">By <a href="http://ginjera.github.io/mokomakambo/author/ginjera.html">ginjera</a></span>
+			<span class="cat-links"><a href="http://ginjera.github.io/mokomakambo/category/blog.html" title="View all posts in blog" rel="category tag">blog</a></span>
+	</div> <!-- /#entry-meta -->
+	<div class="main">
+		<h2 class="entry-title">
+			<a href="http://ginjera.github.io/mokomakambo/colour-settings-for-the-ls-command.html" title="Permalink to Colour settings for ls command" rel="bookmark">Colour settings for ls command</a>
+		</h2>
+		<div class="entry-content">
+			<p>I use CentOS 6.5 on my personal laptop. For the longest time, I lived with the awful colour defaults for the ls command. Certain directories default to blue text on green background.</p>
+<div class="figure align-center">
+<img alt="Awful default directory colours" src="http://ginjera.github.io/mokomakambo/images/Awful-default-dir-colour.png" />
+<p class="caption">Arghh, my eyes! Please sir, it hurts!</p>
+</div>
+<p>It occurred to me recently that there must be a text file somewhere that I could tweak to make this more readable.</p>
+<p>Lo and behold, here's the file that does the trick: <tt class="docutils literal">/etc/DIR_COLORS</tt>. And there are nice helpful comments, which tell us that we can adjust 3 elements:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span class="c"># Below are the color init strings for the basic file types. A color init</span>
+<span class="c"># string consists of one or more of the following numeric codes:</span>
+<span class="c"># Attribute codes:</span>
+<span class="c"># 00=none 01=bold 04=underscore 05=blink 07=reverse 08=concealed</span>
+<span class="c"># Text color codes:</span>
+<span class="c"># 30=black 31=red 32=green 33=yellow 34=blue 35=magenta 36=cyan 37=white</span>
+<span class="c"># Background color codes:</span>
+<span class="c"># 40=black 41=red 42=green 43=yellow 44=blue 45=magenta 46=cyan 47=white</span>
+</pre></div>
+</td></tr></table><p>Scanning through that file, I found the blue (34) on green (42) culprit:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre>OTHER_WRITABLE 34;42 <span class="c"># dir that is other-writable (o+w) and not sticky</span>
+</pre></div>
+</td></tr></table><p>Rather than mess around with <tt class="docutils literal">/etc/DIR_COLORS</tt>, I made a copy at <tt class="docutils literal"><span class="pre">~/.dircolors</span></tt> and changed the settings for OTHER_WRITABLE to 01;35:</p>
+<div class="figure align-center">
+<img alt="Bold magenta folders" src="http://ginjera.github.io/mokomakambo/images/Ahh-much-better.png" />
+<p class="caption">Ahhh, purple folders... exactly what the optometrist ordered</p>
+</div>
+<p>For a full list of available colours, this <a class="reference external" href="http://linux-sxs.org/housekeeping/lscolors.html">site</a> gives the full low down.</p>
+
+		</div> <!--/#entry-content-->
+    		<span class="tag-links"><strong>Tagged</strong>
+ <a href="http://ginjera.github.io/mokomakambo/tag/bash.html" rel="tag">bash</a>,  <a href="http://ginjera.github.io/mokomakambo/tag/ls.html" rel="tag">ls</a>    		</span>
+	</div> <!--/#main-->
+</div>  <!--/#post-->		</div>
+		
+		<div id="footer">
+			<p>Powered by <a href="http://getpelican.com">Pelican</a>, theme by <a href="http://bunnyman.info">tBunnyMan</a>.</p>
+		</div><!-- /#footer -->
+	</div><!-- /#container -->
+	<div style="display:none"></div>
+</body>
+</html>
