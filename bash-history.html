@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8" />
-        <title>Hello World</title>
+        <title>Searching bash history</title>
         <link rel="stylesheet" href="http://ginjera.github.io/mokomakambo/theme/css/main.css" />
         <link href="http://ginjera.github.io/mokomakambo/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Mokomakambo! Atom Feed" />
 
@@ -23,22 +23,28 @@
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="http://ginjera.github.io/mokomakambo/hello-world.html" rel="bookmark"
-           title="Permalink to Hello World">Hello World</a></h1>
+        <a href="http://ginjera.github.io/mokomakambo/bash-history.html" rel="bookmark"
+           title="Permalink to Searching bash history">Searching bash history</a></h1>
     </header>
 
     <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2014-08-10T23:24:00">
-                Published: Sun 10 August 2014
+        <abbr class="published" title="2014-08-16T21:53:00">
+                Published: Sat 16 August 2014
         </abbr>
 
         <address class="vcard author">
                 By                         <a class="url fn" href="http://ginjera.github.io/mokomakambo/author/ginjera.html">ginjera</a>
         </address>
 <p>In <a href="http://ginjera.github.io/mokomakambo/category/blog.html">blog</a>. </p>
-<p>tags: <a href="http://ginjera.github.io/mokomakambo/tag/pelican.html">pelican</a> </p>
-</footer><!-- /.post-info -->      <p>Hooray! Got the blog up and running on <a class="reference external" href="https://pages.github.com/">gh-pages</a>. My <em>first</em> post using <a class="reference external" href="http://docs.getpelican.com/en/3.4.0/getting_started.html">Pelican</a>! There is much to explore in this world of Pelican, <a class="reference external" href="http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html">reST</a>, and static hosting.</p>
+<p>tags: <a href="http://ginjera.github.io/mokomakambo/tag/bash.html">bash</a> </p>
+</footer><!-- /.post-info -->      <p>Recently I was helping my better half to download megabytes of image files from an ftp site. She was having trouble because the ftp connection kept breaking and messing up her workflow of right-click and downloading individual files in her browser. I got to show off the power of the command line with <cite>wget</cite> and its powerful features like <cite>--no-clobber</cite>, <cite>--continue</cite>, <cite>--read-timeout=*seconds*</cite>, <cite>--tries=*number*</cite>, <cite>--recursive</cite>, <cite>--level=*depth*</cite>, <cite>--user=*username*</cite>, and <cite>password=*password*</cite>.</p>
+<p>When she made the same request a couple of days later, I wanted to retrieve thos <cite>wget</cite> commands from bash history to avoid retyping them esp. the long ftp urls.</p>
+<p>Turns out it's pretty simple. Just run history through a grep filter</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span class="nv">$ </span><span class="nb">history</span> | grep wget
+</pre></div>
+</td></tr></table><p>and out comes a list of commands containing <cite>wget</cite>.</p>
+<p>From there it was just a simple cut and paste.</p>
 
     </div><!-- /.entry-content -->
 
