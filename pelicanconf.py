@@ -35,10 +35,10 @@ RELATIVE_URLS = True
 
 # Decode theme from Wordpress
 # THEME = "pelican-themes/pelican-decode"
-THEME = "notmyidea"
+# THEME = "notmyidea"
 # THEME = "pelican-themes/pelican-cait"
 # THEME = "pelican-themes/pelican-blueidea"
-# THEME = "pelican-themes/pelican-chunk"
+THEME = "pelican-themes/pelican-chunk"
 # THEME = "pelican-themes/clean-master"
 # THEME = "pelican-themes/bohemian-master"
 # THEME = "pelican-themes/flasky-master"
