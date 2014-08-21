@@ -1,5 +1,5 @@
-Searching bash history
-======================
+Searching bash history with ctrl-R
+==================================
 
 :date: 2014-08-20 21:53
 :tags: bash
