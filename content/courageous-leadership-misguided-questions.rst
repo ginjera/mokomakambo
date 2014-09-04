@@ -7,7 +7,7 @@ Courageous Leadership: Correcting Misguided Decisions
 :tags: leadership
 :slug: correcting-misguided-decisions
 
-Another nugget from Bob McGannon's courageous leadership video.
+Another nugget from Bob McGannon's courageous leadership video. This time it's about challenging decisions from the top without being confrontational.
 
 Bob shares a story about Charles, a project manager in the Army Corps of Engineers, whose project has been canned by superiors in Pentagon. Charles believes that the decision is misguided based on the type of questions he and his peers on the program had been asked in a questionairre on the programme. And sends out an email to try and correct his superiors' assumptions.
 

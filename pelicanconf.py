@@ -38,10 +38,10 @@ RELATIVE_URLS = True
 # THEME = "notmyidea"
 # THEME = "pelican-themes/pelican-cait"
 # THEME = "pelican-themes/pelican-blueidea"
-THEME = "pelican-themes/pelican-chunk"
+# THEME = "pelican-themes/pelican-chunk"
 # THEME = "pelican-themes/clean-master"
 # THEME = "pelican-themes/bohemian-master"
-# THEME = "pelican-themes/flasky-master"
+THEME = "pelican-themes/flasky-master"
 
 # code blocks with line numbers
 PYGMENTS_RST_OPTIONS = {'linenos':'table'}
