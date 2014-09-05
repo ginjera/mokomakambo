@@ -26,7 +26,7 @@ And speaking of practical and resigning, that brings us to the topic of the day.
     Yours sincerely,
     ginjera
 
-I had gotten tired of getting 3-4% annual increments for the past four years and decided to do something about it. I had been thinking about it since reading Townsend's cheeky book. A mid-year review seemed like the best time to do it. I felt a little uncomfortable to broach the topic, and simply said,"(Boss) today's one on one meeting is gonna be a little weird. (Pause) Today, I resign. Sort of. Here. Read this." The discussion flowed easily after that. The boss didn't take offense and indicated that salary negotiations are fair game. And asked if I had a number in mind. I asked for 20%.
+I had gotten tired of getting 3-4% annual increments for the past four years and decided to do something about it. I had been thinking about it since reading Townsend's cheeky book. A mid-year review seemed like the best time to do it. I felt a little uncomfortable to broach the topic, and simply said,"(Boss) today's one on one meeting is gonna be a little weird. (Pause) Today, I resign. Sort of. Here. Read this." The discussion flowed easily after that. The boss didn't take offense and gamely said that salary negotiations are fair game. And asked if I had a number in mind. I asked for 20%.
 
 I'll find out in 2 weeks' time if this negotiation bears fruit. Either way, this gambit has already paid off for me. I had been putting this off for a while as I fretted about forgoing my performance bonus by leaving the job. I'm happy I plucked up the courage, shoved my doubts aside and took bold action. I think it's better to commit the sin of commission than the sin of omission.
 
@@ -34,11 +34,11 @@ For the curious, here's what Townsend has to say about this topic:
 
 .. topic:: **Underpaid**
 
-    Some good people become badly underpaid. If you're in this spot, but likeyour work, cheer up; all is not lost.
+    Some good people become badly underpaid. If you're in this spot, but like your work, cheer up; all is not lost.
 
-    Resign. Go to the personnel department. Fillin the forms. Apply for your old position. Under "salary objective", put down what you should be paid. 
+    Resign. Go to the personnel department. Fill in the forms. Apply for your old position. Under "salary objective", put down what you should be paid. 
 
-    If your diagnosis is correct, you'll be far and away the best-qualified applicabnt for your old job and cheap at this new price. When I bullied a griping friend into doing this, he ended up with a 30 per cent pay raise, in a company that didn't believe in paying people.
+    If your diagnosis is correct, you'll be far and away the best-qualified applicant for your old job and cheap at this new price. When I bullied a griping friend into doing this, he ended up with a 30 per cent pay raise, in a company that didn't believe in paying people.
 
     If they don't rehire you because of "regulations", it's time you left the company anyway, because they've got the tail on the front of the dog.
 
