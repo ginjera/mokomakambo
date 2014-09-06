@@ -11,7 +11,7 @@ Today's post is courtesy of former Avis CEO Robert Townsend's plain speaking mem
 
 And speaking of practical and resigning, that brings us to the topic of the day. Inspired by Townsend's advice, I did something ballsy today. I resigned from work. Sort of. I handed my boss the following letter:
 
-.. topic:: Letter of Resignation
+    **Letter of Resignation**
 
     Dear (boss),
 
@@ -24,7 +24,7 @@ And speaking of practical and resigning, that brings us to the topic of the day.
     I do appreciate the experience of working for you the past four years and would like to thank you for coaching me to be a better manager.
 
     Yours sincerely,
-    ginjera
+    (ginjera)
 
 I had gotten tired of getting 3-4% annual increments for the past four years and decided to do something about it. I had been thinking about it since reading Townsend's cheeky book. A mid-year review seemed like the best time to do it. I felt a little uncomfortable to broach the topic, and simply said,"(Boss) today's one on one meeting is gonna be a little weird. (Pause) Today, I resign. Sort of. Here. Read this." The discussion flowed easily after that. The boss didn't take offense and gamely said that salary negotiations are fair game. And asked if I had a number in mind. I asked for 20%.
 
@@ -32,7 +32,7 @@ I'll find out in 2 weeks' time if this negotiation bears fruit. Either way, this
 
 For the curious, here's what Townsend has to say about this topic:
 
-.. topic:: **Underpaid**
+    **Underpaid**
 
     Some good people become badly underpaid. If you're in this spot, but like your work, cheer up; all is not lost.
 
