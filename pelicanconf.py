@@ -45,7 +45,7 @@ THEME = "pelican-themes/flasky-master"
 # THEME = "pelican-themes/duncanlock-theme"
 
 # code blocks with line numbers
-PYGMENTS_RST_OPTIONS = {'linenos':'table'}
+# PYGMENTS_RST_OPTIONS = {'linenos':'table'}
 
 # plugins
 # PLUGIN_PATHS = ["pelican-plugins",]
