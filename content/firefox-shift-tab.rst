@@ -7,7 +7,7 @@ How to tab backwards through fields and buttons on firefox?
 :tags: firefox 
 :slug: firefox-shift-tab
 
-I use firefox as my preferred browser. I frequently use 'tab' to jump through text fields/buttons on web pages. It's nice and quick. Trouble though is that this only works in the forwards direction. Sometimes I 'tab' through too quickly and have to reach for the mouse to click on a field or button I missed.
+I use firefox as my preferred browser. I frequently use 'tab' to jump through text fields/buttons on web forms. It's nice and quick. Trouble though is that this only works in the forwards direction. Sometimes I 'tab' through too quickly and have to reach for the mouse to click on a field or button I missed. I could not figure out how to 'tab' through the same fileds and buttons backwords. Until now.
 
 The `Mozilla support page on keyboard shortcuts`_ isn't much help. So what's a keyboard shortcut lovin' geek to do? Google-fu to the rescue. Googling for "firefox tab backwards" brings one to a mozillaZine forum topic from way back in 2005 [#]_. `Is there a backward tab key sequence`_? a kind forum member asks on behalf of my future self. Lo and behold - indeed there is. It's ``Shift-Tab``. And it still works in 2014. 
 
